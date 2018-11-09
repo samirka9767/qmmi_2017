@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0d3b2e8c-f2d1-4fe4-b9c5-47a75ed3b729">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="87"/>
+	<field name="NAME" class="java.lang.String"/>
+	<field name="CNAME" class="java.lang.String"/>
+	<field name="GNAME" class="java.lang.String"/>
+	<field name="CLNAME" class="java.lang.String"/>
+	<field name="TNAME" class="java.lang.String"/>
+	<field name="JNAME" class="java.lang.String"/>
+	<field name="YUNESKOID" class="java.lang.String"/>
+	<field name="EDATE" class="java.lang.String"/>
+	<field name="RCODE" class="java.lang.String"/>
+	<field name="FILE" class="java.lang.String"/>
+	<field name="FILE_EXISTS" class="java.lang.String"/>
+	<field name="CNAMERU" class="java.lang.String"/>
+	<field name="GNAMERU" class="java.lang.String"/>
+	<field name="CLNAMERU" class="java.lang.String"/>
+	<field name="JNAMERU" class="java.lang.String"/>
+	<field name="TNAMERU" class="java.lang.String"/>
+	<field name="YUNESKOIDRU" class="java.lang.String"/>
+	<field name="NAMERU" class="java.lang.String"/>
+	<title>
+		<band height="58" splitType="Stretch">
+			<image isUsingCache="false">
+				<reportElement x="155" y="0" width="247" height="27" uuid="914b8e37-fb34-4feb-86dd-97b99d07e9fe"/>
+				<imageExpression><![CDATA["jasper/resources/mincul.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="75" splitType="Stretch">
+			<staticText>
+				<reportElement x="122" y="34" width="294" height="33" uuid="ce74c405-ea00-4e1a-9e76-9a71805dcd4b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[INVENTORY PASSPORT
+of Azerbaijan intangible cultural heritage sample
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="122" y="0" width="294" height="34" uuid="f37996df-ee37-40e8-99a7-74371ba9e6b4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Azərbaycan qeyri-maddi mədəni irs nümunəsinin
+İNVENTAR PASPORTU
+]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="399" splitType="Stretch">
+			<staticText>
+				<reportElement x="7" y="9" width="128" height="21" uuid="c2b9a9ac-d9b2-4c9a-87fd-5c0015355b68"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nümunənin  adı ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="9" width="388" height="21" uuid="08e1f469-8cee-4dac-a62b-0a8b4f1acede"/>
+				<box>
+					<bottomPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="7" y="28" width="128" height="14" uuid="6f3d3ad6-2a6a-4288-8671-6cf40752f1a9"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Name of sample]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="66" width="128" height="14" uuid="3474df98-1212-432f-b063-9c1489c89e7b"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Category]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="47" width="388" height="21" uuid="5d36fb87-5f71-4f88-a3b8-a06ab72fcf0f"/>
+				<box>
+					<bottomPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CNAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="8" y="195" width="128" height="21" uuid="c35da24e-b711-4891-833e-39039e80f293"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qrupu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="216" width="128" height="14" uuid="b407c416-31b5-4b94-adcd-7c2986fa5464"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="83" width="128" height="21" uuid="4cdab55e-5651-4eb1-bcdc-1ae848aaa4d0"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sinfi]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="83" width="388" height="21" uuid="a218c865-d225-47ef-9fa8-740a7177e60f"/>
+				<box>
+					<bottomPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CLNAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="7" y="104" width="128" height="14" uuid="426614c0-cbd9-4e15-8355-76058a6c3117"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Class]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="121" width="128" height="21" uuid="1f2d93d4-4463-4487-a585-03d234b5aab3"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Növü]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="142" width="128" height="14" uuid="b7ffdf92-94fd-4700-9c2c-f5631804d0e5"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Species]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="122" width="388" height="21" uuid="4e96c6ac-8ecd-4a1c-ad94-754478dbbbf1"/>
+				<box>
+					<bottomPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TNAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="7" y="159" width="128" height="21" uuid="0dacd463-f696-4ac3-b432-cf680623ab6d"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Janr]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="180" width="128" height="14" uuid="1eea34e8-7a70-41d0-bed8-2788885fcaee"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Genre]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="148" y="159" width="388" height="21" uuid="10b658c3-f30b-4c49-b652-69af73c3e3c0"/>
+				<box>
+					<bottomPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{JNAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="7" y="236" width="128" height="21" uuid="d6923457-e7ed-4b86-bb4b-13f46981eb2a"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[YUNESKO domenləri]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="255" width="128" height="14" uuid="3da43ccb-9d9b-4364-8952-f152dc5d6463"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[UNESCO domains]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="RelativeToTallestObject" x="148" y="236" width="388" height="21" uuid="bdbeb3a4-9553-4bbd-a5bc-c26d1811c306"/>
+				<box>
+					<bottomPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{YUNESKOID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="7" y="278" width="516" height="21" uuid="6e9c1b6b-d2a0-4dee-9a40-ea1b565479ab"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Azərbaycan qeyri-maddi mədəni irs nümunələrinin dövlət reyestrində rəsmi qeydiyyata alınmışdır]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="299" width="516" height="16" uuid="0eef4a1d-7e68-42ba-ba38-2fd388b31a0d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Registered in the Azerbaijan intangible cultural heritage samples State İnventory]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="326" width="128" height="16" uuid="25122128-3583-4188-ac6f-ac2a542ea1c4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qeydiyyata alınma  tarixi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="342" width="128" height="14" uuid="f447fb17-b893-4236-931e-d3a135039099"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Date of registration]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="326" width="388" height="16" uuid="9d583d8f-6f3d-42db-b6b2-65da1ddc098b"/>
+				<box>
+					<bottomPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EDATE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="7" y="363" width="128" height="16" uuid="3b066920-7dab-48f9-997a-3604e63086d3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reyestr kodu]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="363" width="388" height="16" uuid="f7a57b71-b6bd-4f8e-a928-dae82629a536"/>
+				<box>
+					<bottomPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RCODE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="8" y="379" width="128" height="14" uuid="a6eb8333-38fa-40fb-9173-53896a444bd0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Invertory code]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="28" width="388" height="14" uuid="25d177c9-a41f-4453-906f-e13bef4367e0"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NAMERU}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="66" width="388" height="14" uuid="8201f703-81fb-4c28-98ac-8a1c87c4d69b"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CNAMERU}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="105" width="388" height="14" uuid="0d04ecf3-9363-42ec-a131-f732ab4854f6"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CLNAMERU}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="144" width="388" height="14" uuid="e3258f72-caf1-432e-b6a6-23e472d948dd"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TNAMERU}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="148" y="181" width="388" height="14" uuid="dbc7240b-b939-48e5-8cbf-6275a4a54d84"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{JNAMERU}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="148" y="255" width="388" height="14" uuid="45cde540-ddd3-4b86-a413-05829616d4e8"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{YUNESKOIDRU}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="7" y="47" width="128" height="21" uuid="102c8c9f-c67d-4577-ace0-011acc7dab08"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kateqoriyası]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="195" width="388" height="21" uuid="0a673e6c-4f80-42c8-903b-9c7d6770c9d8"/>
+				<box>
+					<bottomPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="9" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GNAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="217" width="388" height="14" uuid="7751a8fb-b09f-4978-86d0-aa56ddf88d62"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="DejaVu Sans" size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GNAMERU}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="193" splitType="Stretch">
+			<staticText>
+				<reportElement x="7" y="21" width="128" height="14" uuid="9a0bb00f-a82a-4dee-ac98-6875a7c38fa8"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Issued by]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="206" y="19" width="330" height="15" uuid="3db4deae-07e9-4fbc-a6fb-9ad6801553dc"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Ministry of Culture and Tourism of the Republic of Azerbaijan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="69" width="128" height="20" uuid="f4e96b46-7a38-410a-a91d-5131e7b15bda"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[M.Y.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="89" width="128" height="20" uuid="37f069bc-568d-4c5d-b27e-74c7a5c0cc2c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QR kodu]]></text>
+			</staticText>
+			<image>
+				<reportElement x="427" y="89" width="80" height="61" uuid="0229fd03-d170-4d3c-bc06-202123a278d6"/>
+				<imageExpression><![CDATA[$F{FILE_EXISTS} == "0" ? "jasper/resources/profile-picture.jpg": $F{FILE}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="7" y="6" width="128" height="14" uuid="ac7fc354-eec6-4326-a606-b15094387169"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Verilib]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="206" y="2" width="330" height="19" uuid="f8546460-ac03-45e8-83ba-a9763a1b020a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Azərbaycan Respublikasının Mədəniyyət və Turizm Nazirliyi
+]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>

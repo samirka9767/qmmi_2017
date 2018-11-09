@@ -1,0 +1,150 @@
+.treeview, .treeview ul {
+    padding: 0 15px 15px 5px !important;
+    margin: 0;
+    list-style: none;
+}
+
+.treeview ul {
+    margin-top: 4px;
+}
+
+.treeview .hitarea {
+    background: url(images/treeview-default.gif) -64px -25px no-repeat;
+    height: 16px;
+    width: 16px;
+    margin-left: -16px;
+    float: left;
+    cursor: pointer;
+}
+
+/* fix for IE6 */
+* html .hitarea {
+    display: inline;
+    float: none;
+}
+
+.treeview li {
+    margin: 0;
+    padding: 3px 0pt 3px 16px;
+}
+
+.treeview a.selected {
+    /*    background-color: #004d91;*/
+}
+
+#treecontrol {
+    margin: 1em 0;
+    display: none;
+}
+
+.treeview .hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.treeview li {
+    background: url(images/treeview-default-line.gif) 0 0 no-repeat;
+}
+
+.treeview li.collapsable, .treeview li.expandable {
+    background-position: 0 -176px;
+}
+
+.treeview .expandable-hitarea {
+    background-position: -80px -3px;
+}
+
+.treeview li.last {
+    background-position: 0 -1766px
+}
+
+.treeview li.lastCollapsable, .treeview li.lastExpandable {
+    background-image: url(images/treeview-default.gif);
+}
+
+.treeview li.lastCollapsable {
+    background-position: 0 -111px
+}
+
+.treeview li.lastExpandable {
+    background-position: -32px -67px
+}
+
+.treeview div.lastCollapsable-hitarea, .treeview div.lastExpandable-hitarea {
+    background-position: 0;
+}
+
+.treeview li {
+    background-image: url(images/treeview-gray-line.gif);
+}
+
+/*.treeview li ul {margin:0 -10px	 }*/
+.treeview .hitarea, .treeview li.lastCollapsable, .treeview li.lastExpandable {
+    background-image: url(images/treeview-gray.gif);
+}
+
+.treeview-famfamfam li {
+    background-image: url(images/treeview-famfamfam-line.gif);
+}
+
+.treeview-famfamfam .hitarea, .treeview-famfamfam li.lastCollapsable, .treeview-famfamfam li.lastExpandable {
+    background-image: url(images/treeview-famfamfam.gif);
+}
+
+.treeview .placeholder {
+    background: url(images/ajax-loader.gif) 0 0 no-repeat;
+    height: 16px;
+    width: 16px;
+    display: block;
+}
+
+.filetree li {
+    padding: 3px 0 2px 16px;
+}
+
+.filetree span.folder, .filetree span.file {
+    padding: 1px 0 1px 16px;
+    display: block;
+}
+
+.filetree span.folder {
+    background: url(images/folder.gif) 0 0 no-repeat;
+}
+
+.filetree li.expandable span.folder {
+    background: url(images/folder-closed.gif) 0 0 no-repeat;
+}
+
+.filetree span.file {
+    background: url(images/file.gif) 0 0 no-repeat;
+}
+
+/*li.active .hitarea, li.active a {
+    background-color: #FFFFFF;
+}
+li.active ul li .hitarea, li.active ul li a {
+    background-color: transparent;
+}*/
+li.active a {
+    background-color: #BAC0D1;
+    display: inline-block;
+    padding: 0px 7px 0px 7px;
+}
+
+li.active ul li a {
+    background-color: transparent;
+    padding: 0;
+}
+
+.treeview li a {
+    color: #01305A !important;
+}
+
+
+.treeview li a.active {
+    background-color: #C7CBD6;
+    border: 1px solid #9499AB;
+    border-radius: 3px 3px 3px 3px;
+    display: inline-block;
+    padding: 3px;
+}

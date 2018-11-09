@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="mundericat1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f40bca7f-9062-4407-9fd6-08bc726e64c3">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="NAME" class="java.lang.String"/>
+	<field name="TIP" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="87" splitType="Stretch"/>
+	</title>
+	<detail>
+		<band height="100" splitType="Stretch">
+			<textField>
+				<reportElement x="3" y="0" width="199" height="20" uuid="bd42a4a3-3a79-41db-8252-db8c515733c7">
+					<printWhenExpression><![CDATA[$F{TIP}.equals("1012")]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="20" width="167" height="20" uuid="54153ef8-4c4b-4d35-96ab-e615b21c4c8e">
+					<printWhenExpression><![CDATA[$F{TIP}.equals("1013")]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="40" width="170" height="20" uuid="f4d6a6d3-8a4a-425e-bb2f-6633bfeaf8a7">
+					<printWhenExpression><![CDATA[$F{TIP}.equals("1014")]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="202" y="60" width="165" height="20" uuid="6fad42b7-db9f-402c-9959-0af58d1e73d8">
+					<printWhenExpression><![CDATA[$F{TIP}.equals("1017")]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="80" width="138" height="20" uuid="a69c7623-fe2a-49e0-9dce-159c16ed2dcc">
+					<printWhenExpression><![CDATA[$F{TIP}.equals("1015")]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{NAME}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

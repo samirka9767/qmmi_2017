@@ -1,0 +1,24 @@
+{
+	"files": {
+		"styless.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "styless.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": [
+				"elements.less",
+				"styless.less"
+			]
+		}
+	}
+}
